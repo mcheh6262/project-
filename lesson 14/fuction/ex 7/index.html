@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ex 7</title>
+</head>
+<body>
+    <p div id="result"></p>
+    <script>
+        function print(months) {
+            document.getElementById('result').innerHTML = months
+        }
+
+        function bigger(months) {
+           var arr = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+          var day = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+           if (months >= 1 && months <= 12) {
+            return  arr [months -1] ; day [months -1]
+           }
+           else {
+            return -1
+        }
+        }
+       
+    
+    print(bigger(5))
+      
+    </script>
+</body>
+</html>

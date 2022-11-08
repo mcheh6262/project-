@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EX 9</title>
+</head>
+<body>
+    <p div id="result"></p>
+
+    <script>
+        function Boolean1(arr) {
+            let index = 0   
+            while(true) {
+                if(arr[index] == false) {
+                    return index;
+                }
+                else {
+                    index++
+                    if (index >= arr.length) {
+                        return - 1
+                    }
+                }
+              }       
+            } 
+            
+        
+        
+        var arr = [true, false,true, false,true, false,] 
+        Boolean1(arr)
+       console.log (Boolean1(arr));
+        
+    </script>
+
+    
+</body>
+</html>

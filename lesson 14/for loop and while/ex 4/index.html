@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EX 4</title>
+</head>
+<body>
+    <p div id="result"></p>
+
+    <script>
+        function findDup(arr) {
+            const result = {}
+            for(let e of arr) {
+                if (result[e] == undefined) {
+                    result[e] =1   
+                }
+                else {
+                    result[e] +=1
+                    
+                }  
+            }  
+                for (let e in result)   {
+                if (result[e] ==1) {
+                    delete result[e] 
+                }        
+            } 
+            return result;
+        }
+        
+        var arr = [2,56,4,4,78,5,78,45,210,56,4,6,2,2] 
+        
+       document.write(JSON.stringify(findDup(arr))); 
+        
+    </script>
+
+    
+</body>
+</html>
